@@ -1,0 +1,9 @@
+c:\users\miłosz\documents\visual studio 2012\Projects\kosci\kosci\bin\Debug\kosci.exe.config
+c:\users\miłosz\documents\visual studio 2012\Projects\kosci\kosci\bin\Debug\kosci.exe
+c:\users\miłosz\documents\visual studio 2012\Projects\kosci\kosci\bin\Debug\kosci.pdb
+c:\users\miłosz\documents\visual studio 2012\Projects\kosci\kosci\obj\Debug\kosci.csprojResolveAssemblyReference.cache
+c:\users\miłosz\documents\visual studio 2012\Projects\kosci\kosci\obj\Debug\kosci.Form1.resources
+c:\users\miłosz\documents\visual studio 2012\Projects\kosci\kosci\obj\Debug\kosci.Properties.Resources.resources
+c:\users\miłosz\documents\visual studio 2012\Projects\kosci\kosci\obj\Debug\kosci.csproj.GenerateResource.Cache
+c:\users\miłosz\documents\visual studio 2012\Projects\kosci\kosci\obj\Debug\kosci.exe
+c:\users\miłosz\documents\visual studio 2012\Projects\kosci\kosci\obj\Debug\kosci.pdb
