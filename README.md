@@ -7,6 +7,6 @@ Założenia są proste storzyć gierke w której gracz będzie mógł:
 
 Zapisy , Przydzielone Zadania, Problemy znajdziecie u góry w zakładce <strong>Issues</strong>
 
-Wszstkich chętnych zapraszam do dołączenia możecie dzięki temu zdobyć nowe doświadczenia,
+Wszstkich chętnych zapraszam do dołączenia możecie dzięki temu zdobyć nowe doświadczenia,<br>
 nauczyć się pracy w grupie i takie tam xD
 głównie chodzi oto żeby kodzić ! ;p
