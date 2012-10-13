@@ -29,8 +29,11 @@ Jeśli w górnych kategoriach tabeli (od jedynek do szóstek) uzyska się razem 
     szansa -- niezależnie od układu kostek uzyskuje się sumę oczek z wszystkich kostek;<br>
 
 </ul>
+
 Zapisy , Przydzielone Zadania, Problemy znajdziecie u góry w zakładce <strong>Issues</strong>
 
-Wszstkich chętnych zapraszam do dołączenia możecie dzięki temu zdobyć nowe doświadczenia,<br>
+Projekt pisany jest w Microsoft Visual Studio 2012 oczywiście ten edytor nie jest przymusowy.
+
+Wszystkich chętnych zapraszam do dołączenia możecie dzięki temu zdobyć nowe doświadczenia,<br>
 nauczyć się pracy w grupie i takie tam xD
 głównie chodzi oto żeby kodzić ! ;p
