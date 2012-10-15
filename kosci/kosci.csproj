@@ -110,6 +110,8 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\roll.wav" />
+    <None Include="Resources\gray.png" />
+    <None Include="Resources\green.png" />
     <Content Include="unnamed.ico" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

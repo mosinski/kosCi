@@ -13,10 +13,9 @@ namespace kosci
 {
     public partial class Form1 : Form
     {
-        static int rodzaj_gry = 0, runda = 0;
+        static int rodzaj_gry = 0, runda = 0, mnoznik = 0, suma = 0, wynik = 0;
         static int kostka1_los = 0, kostka2_los = 0, kostka3_los = 0, kostka4_los = 0, kostka5_los = 0;
-        static string nazwa="_";
-
+        static string nazwa = "_";
         public Form1()
         {
             InitializeComponent();
@@ -37,6 +36,10 @@ namespace kosci
             kostka4.Visible = true;
             kostka5.Visible = true;
             rzuc.Visible = true;
+            groupBox1.Visible = true;
+            pictureBox1.Visible = true;
+            pictureBox2.Visible = true;
+            pictureBox3.Visible = true;
         }
 
 
@@ -52,147 +55,37 @@ namespace kosci
             if (kostka1.Checked)
             {
                 kostka1_los = r.Next(1,7);
-
-                if (kostka1_los == 1)
-                {
-                    kostka1.Image = Properties.Resources._1;
-                }
-                else if (kostka1_los == 2)
-                {
-                    kostka1.Image = Properties.Resources._2;
-                }
-                else if (kostka1_los == 3)
-                {
-                    kostka1.Image = Properties.Resources._3;
-                }
-                else if (kostka1_los == 4)
-                {
-                    kostka1.Image = Properties.Resources._4;
-                }
-                else if (kostka1_los == 5)
-                {
-                    kostka1.Image = Properties.Resources._5;
-                }
-                else if (kostka1_los == 6)
-                {
-                    kostka1.Image = Properties.Resources._6;
-                }
+                nazwa += Convert.ToString(kostka1_los); ;
+                kostka1.Image = Properties.Resources.ResourceManager.GetObject(nazwa) as Image;
+                nazwa = "_";
             }
             if (kostka2.Checked)
             {
                 kostka2_los = r.Next(1, 7);
-
-                if (kostka2_los == 1)
-                {
-                    kostka2.Image = Properties.Resources._1;
-                }
-                else if (kostka2_los == 2)
-                {
-                    kostka2.Image = Properties.Resources._2;
-                }
-                else if (kostka2_los == 3)
-                {
-                    kostka2.Image = Properties.Resources._3;
-                }
-                else if (kostka2_los == 4)
-                {
-                    kostka2.Image = Properties.Resources._4;
-                }
-                else if (kostka2_los == 5)
-                {
-                    kostka2.Image = Properties.Resources._5;
-                }
-                else if (kostka1_los == 6)
-                {
-                    kostka2.Image = Properties.Resources._6;
-                }
+                nazwa += Convert.ToString(kostka2_los); ;
+                kostka2.Image = Properties.Resources.ResourceManager.GetObject(nazwa) as Image;
+                nazwa = "_";
             }
             if (kostka3.Checked)
             {
                 kostka3_los = r.Next(1, 7);
-
-                if (kostka3_los == 1)
-                {
-                    kostka3.Image = Properties.Resources._1;
-                }
-                else if (kostka3_los == 2)
-                {
-                    kostka3.Image = Properties.Resources._2;
-                }
-                else if (kostka3_los == 3)
-                {
-                    kostka3.Image = Properties.Resources._3;
-                }
-                else if (kostka3_los == 4)
-                {
-                    kostka3.Image = Properties.Resources._4;
-                }
-                else if (kostka3_los == 5)
-                {
-                    kostka3.Image = Properties.Resources._5;
-                }
-                else if (kostka3_los == 6)
-                {
-                    kostka3.Image = Properties.Resources._6;
-                }
+                nazwa += Convert.ToString(kostka3_los); ;
+                kostka3.Image = Properties.Resources.ResourceManager.GetObject(nazwa) as Image;
+                nazwa = "_"; 
             }
             if (kostka4.Checked)
             {
                 kostka4_los = r.Next(1, 7);
-
-                if (kostka4_los == 1)
-                {
-                    kostka4.Image = Properties.Resources._1;
-                }
-                else if (kostka4_los == 2)
-                {
-                    kostka4.Image = Properties.Resources._2;
-                }
-                else if (kostka4_los == 3)
-                {
-                    kostka4.Image = Properties.Resources._3;
-                }
-                else if (kostka4_los == 4)
-                {
-                    kostka4.Image = Properties.Resources._4;
-                }
-                else if (kostka4_los == 5)
-                {
-                    kostka4.Image = Properties.Resources._5;
-                }
-                else if (kostka4_los == 6)
-                {
-                    kostka4.Image = Properties.Resources._6;
-                }
+                nazwa += Convert.ToString(kostka4_los); ;
+                kostka4.Image = Properties.Resources.ResourceManager.GetObject(nazwa) as Image;
+                nazwa = "_";
             }
             if (kostka5.Checked)
             {
                 kostka5_los = r.Next(1, 7);
-
-                if (kostka5_los == 1)
-                {
-                    kostka5.Image = Properties.Resources._1;
-                }
-                else if (kostka5_los == 2)
-                {
-                    kostka5.Image = Properties.Resources._2;
-                }
-                else if (kostka5_los == 3)
-                {
-                    kostka5.Image = Properties.Resources._3;
-                }
-                else if (kostka5_los == 4)
-                {
-                    kostka5.Image = Properties.Resources._4;
-                }
-                else if (kostka5_los == 5)
-                {
-                    kostka5.Image = Properties.Resources._5;
-                }
-                else if (kostka1_los == 6)
-                {
-                    kostka5.Image = Properties.Resources._6;
-                }
+                nazwa += Convert.ToString(kostka5_los); ;
+                kostka5.Image = Properties.Resources.ResourceManager.GetObject(nazwa) as Image;
+                nazwa = "_";
             }
 
             //
@@ -202,8 +95,35 @@ namespace kosci
             }
             else if (rodzaj_gry == 2)
             {
-                MessageBox.Show("Witaj w wersji karcianej");
+                MessageBox.Show("Witaj w wersji karcianej niestety nie jest jeszcze ona ukończona");
             }
+        }
+
+        private void podlicz()
+        {
+            if (kostka1_los == mnoznik)
+            {
+                suma++;
+            }
+            if (kostka2_los == mnoznik)
+            {
+                suma++;
+            }
+            if (kostka3_los == mnoznik)
+            {
+                suma++;
+            }
+            if (kostka4_los == mnoznik)
+            {
+                suma++;
+            }
+            if (kostka5_los == mnoznik)
+            {
+                suma++;
+            }
+            wynik = suma * mnoznik;
+            MessageBox.Show("Wynik to: "+wynik);
+
         }
 
         private void wersjaToolStripMenuItem_Click(object sender, EventArgs e)
@@ -220,15 +140,28 @@ namespace kosci
 
         private void button1_Click(object sender, EventArgs e)
         {
-
+            if (runda == 3)
+            {
+                MessageBox.Show("Runda nr: " + runda+"\nWybierz punkty");
+            }
+            else
+            {
                 runda++;
                 MessageBox.Show("Runda nr: " + runda);
                 silnik();
+                if (runda == 1)
+                {
+                    pictureBox1.Visible = false;
+                }
+                if (runda == 2)
+                {
+                    pictureBox2.Visible = false;
+                }
                 if (runda == 3)
                 {
-                    runda = 0;
-                    silnik();
+                    pictureBox3.Visible = false;
                 }
+            } 
         }
 
         private void groupBox1_Enter(object sender, EventArgs e)
@@ -236,9 +169,40 @@ namespace kosci
 
         }
 
-        private void label1_Click(object sender, EventArgs e)
+        private void button1_Click_1(object sender, EventArgs e)
         {
+            mnoznik = 1;
+            podlicz();
+        }
 
+        private void button2_Click(object sender, EventArgs e)
+        {
+            mnoznik = 2;
+            podlicz();
+        }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            mnoznik = 3;
+            podlicz();
+        }
+
+        private void button4_Click(object sender, EventArgs e)
+        {
+            mnoznik = 4;
+            podlicz();
+        }
+
+        private void button5_Click(object sender, EventArgs e)
+        {
+            mnoznik = 5;
+            podlicz();
+        }
+
+        private void button6_Click(object sender, EventArgs e)
+        {
+            mnoznik = 6;
+            podlicz();
         }
     }
 }
