@@ -47,6 +47,8 @@
             this.kostka5 = new System.Windows.Forms.CheckBox();
             this.rzuc = new System.Windows.Forms.Button();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.label7 = new System.Windows.Forms.Label();
+            this.button7 = new System.Windows.Forms.Button();
             this.label6 = new System.Windows.Forms.Label();
             this.button6 = new System.Windows.Forms.Button();
             this.label5 = new System.Windows.Forms.Label();
@@ -62,6 +64,7 @@
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.pictureBox3 = new System.Windows.Forms.PictureBox();
+            this.jakGraćToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -142,7 +145,8 @@
             // infoToolStripMenuItem
             // 
             this.infoToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.autorzyToolStripMenuItem});
+            this.autorzyToolStripMenuItem,
+            this.jakGraćToolStripMenuItem});
             this.infoToolStripMenuItem.Name = "infoToolStripMenuItem";
             this.infoToolStripMenuItem.Size = new System.Drawing.Size(40, 20);
             this.infoToolStripMenuItem.Text = "Info";
@@ -150,7 +154,7 @@
             // autorzyToolStripMenuItem
             // 
             this.autorzyToolStripMenuItem.Name = "autorzyToolStripMenuItem";
-            this.autorzyToolStripMenuItem.Size = new System.Drawing.Size(115, 22);
+            this.autorzyToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
             this.autorzyToolStripMenuItem.Text = "Autorzy";
             // 
             // kostka1
@@ -241,6 +245,8 @@
             // groupBox1
             // 
             this.groupBox1.BackColor = System.Drawing.Color.Transparent;
+            this.groupBox1.Controls.Add(this.label7);
+            this.groupBox1.Controls.Add(this.button7);
             this.groupBox1.Controls.Add(this.label6);
             this.groupBox1.Controls.Add(this.button6);
             this.groupBox1.Controls.Add(this.label5);
@@ -258,9 +264,27 @@
             this.groupBox1.Size = new System.Drawing.Size(629, 76);
             this.groupBox1.TabIndex = 8;
             this.groupBox1.TabStop = false;
-            this.groupBox1.Text = "Wyniki";
+            this.groupBox1.Text = "Puktacja";
             this.groupBox1.Visible = false;
             this.groupBox1.Enter += new System.EventHandler(this.groupBox1_Enter);
+            // 
+            // label7
+            // 
+            this.label7.AutoSize = true;
+            this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.label7.Location = new System.Drawing.Point(569, 16);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(49, 18);
+            this.label7.TabIndex = 13;
+            this.label7.Text = "suma";
+            // 
+            // button7
+            // 
+            this.button7.Location = new System.Drawing.Point(582, 37);
+            this.button7.Name = "button7";
+            this.button7.Size = new System.Drawing.Size(30, 33);
+            this.button7.TabIndex = 12;
+            this.button7.UseVisualStyleBackColor = true;
             // 
             // label6
             // 
@@ -415,6 +439,13 @@
             this.pictureBox3.UseWaitCursor = true;
             this.pictureBox3.Visible = false;
             // 
+            // jakGraćToolStripMenuItem
+            // 
+            this.jakGraćToolStripMenuItem.Name = "jakGraćToolStripMenuItem";
+            this.jakGraćToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.jakGraćToolStripMenuItem.Text = "Jak Grać?";
+            this.jakGraćToolStripMenuItem.Click += new System.EventHandler(this.jakGraćToolStripMenuItem_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -483,6 +514,9 @@
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.PictureBox pictureBox2;
         private System.Windows.Forms.PictureBox pictureBox3;
+        private System.Windows.Forms.Label label7;
+        private System.Windows.Forms.Button button7;
+        private System.Windows.Forms.ToolStripMenuItem jakGraćToolStripMenuItem;
     }
 }
 
