@@ -270,14 +270,18 @@ namespace kosci
             sumuj();
         }
 
-        private void richTextBox1_TextChanged(object sender, EventArgs e)
-        {
-
-        }
 
         private void jakGraćToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            MessageBox.Show("Zasady gry są bardzo proste:\nCelem gry jest zdobycie jak najwyższej liczby punktów.\nGracz w każdej turze ma do dyspozycji 3 rzuty kośćmi.\nPrzed rzutem odznaczasz kości, którymi chcesz rzucać.\nPo każdej turze, wszystki kości automatycznie zaznaczają się do rzutu.\nJeśli zakończymy rzut zaznaczamy pole, w które chcemy wpisać wynik. Gra dostępna jest w 2-óch wersjach klasycznej i karcianej.", "Jak grać?", MessageBoxButtons.OK, MessageBoxIcon.Question);
+            string zasady = "---------------------------------------------------------------------------\n";
+            zasady +="1. Celem gry jest zdobycie jak najwyższej liczby punktów.\n\n";
+            zasady +="2. Gracz w każdej turze ma do dyspozycji 3 rzuty kośćmi.\n\n";
+            zasady +="3. Przed rzutem odznaczasz kości, którymi nie chcesz rzucać.\n\n";
+            zasady +="4. Po każdej turze, wszystki kości automatycznie zaznaczają się do rzutu.\n\n";
+            zasady +="5. Na koniec tury zaznaczamy pole, w które chcemy wpisać wynik.\n\n";
+            zasady +="6. Gra dostępna jest w 2-óch wersjach klasycznej i karcianej.\n";
+            zasady += "---------------------------------------------------------------------------\n";
+            MessageBox.Show("Zasady gry są bardzo proste:\n"+zasady, "Jak grać?", MessageBoxButtons.OK, MessageBoxIcon.Question);
         }
     }
 }

@@ -34,12 +34,12 @@
             this.rodzajGryToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
             this.wersjaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.wersjaKarcianaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.ilośćRundToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.toolStripSeparator1 = new System.Windows.Forms.ToolStripSeparator();
             this.wyjdźToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.wynikiToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.infoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.autorzyToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.jakGraćToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.kostka1 = new System.Windows.Forms.CheckBox();
             this.kostka2 = new System.Windows.Forms.CheckBox();
             this.kostka3 = new System.Windows.Forms.CheckBox();
@@ -64,7 +64,6 @@
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.pictureBox3 = new System.Windows.Forms.PictureBox();
-            this.jakGraćToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -74,6 +73,7 @@
             // 
             // menuStrip1
             // 
+            this.menuStrip1.BackColor = System.Drawing.SystemColors.Control;
             this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.graToolStripMenuItem,
             this.wynikiToolStripMenuItem,
@@ -88,7 +88,6 @@
             // 
             this.graToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.rodzajGryToolStripMenuItem1,
-            this.ilośćRundToolStripMenuItem,
             this.toolStripSeparator1,
             this.wyjdźToolStripMenuItem});
             this.graToolStripMenuItem.Name = "graToolStripMenuItem";
@@ -101,7 +100,7 @@
             this.wersjaToolStripMenuItem,
             this.wersjaKarcianaToolStripMenuItem});
             this.rodzajGryToolStripMenuItem1.Name = "rodzajGryToolStripMenuItem1";
-            this.rodzajGryToolStripMenuItem1.Size = new System.Drawing.Size(129, 22);
+            this.rodzajGryToolStripMenuItem1.Size = new System.Drawing.Size(152, 22);
             this.rodzajGryToolStripMenuItem1.Text = "Nowa Gra";
             // 
             // wersjaToolStripMenuItem
@@ -118,21 +117,16 @@
             this.wersjaKarcianaToolStripMenuItem.Text = "Wersja Karciana";
             this.wersjaKarcianaToolStripMenuItem.Click += new System.EventHandler(this.wersjaKarcianaToolStripMenuItem_Click);
             // 
-            // ilośćRundToolStripMenuItem
-            // 
-            this.ilośćRundToolStripMenuItem.Name = "ilośćRundToolStripMenuItem";
-            this.ilośćRundToolStripMenuItem.Size = new System.Drawing.Size(129, 22);
-            this.ilośćRundToolStripMenuItem.Text = "Ilość Rund";
-            // 
             // toolStripSeparator1
             // 
             this.toolStripSeparator1.Name = "toolStripSeparator1";
-            this.toolStripSeparator1.Size = new System.Drawing.Size(126, 6);
+            this.toolStripSeparator1.Size = new System.Drawing.Size(149, 6);
             // 
             // wyjdźToolStripMenuItem
             // 
             this.wyjdźToolStripMenuItem.Name = "wyjdźToolStripMenuItem";
-            this.wyjdźToolStripMenuItem.Size = new System.Drawing.Size(129, 22);
+            this.wyjdźToolStripMenuItem.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Alt | System.Windows.Forms.Keys.Q)));
+            this.wyjdźToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
             this.wyjdźToolStripMenuItem.Text = "Wyjdź";
             this.wyjdźToolStripMenuItem.Click += new System.EventHandler(this.wyjdźToolStripMenuItem_Click);
             // 
@@ -156,6 +150,13 @@
             this.autorzyToolStripMenuItem.Name = "autorzyToolStripMenuItem";
             this.autorzyToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
             this.autorzyToolStripMenuItem.Text = "Autorzy";
+            // 
+            // jakGraćToolStripMenuItem
+            // 
+            this.jakGraćToolStripMenuItem.Name = "jakGraćToolStripMenuItem";
+            this.jakGraćToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.jakGraćToolStripMenuItem.Text = "Jak Grać?";
+            this.jakGraćToolStripMenuItem.Click += new System.EventHandler(this.jakGraćToolStripMenuItem_Click);
             // 
             // kostka1
             // 
@@ -232,8 +233,9 @@
             // 
             this.rzuc.BackColor = System.Drawing.Color.Green;
             this.rzuc.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.rzuc.Font = new System.Drawing.Font("Buxton Sketch", 45F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.rzuc.Font = new System.Drawing.Font("Gill Sans Ultra Bold Condensed", 44.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
             this.rzuc.Location = new System.Drawing.Point(276, 310);
+            this.rzuc.Margin = new System.Windows.Forms.Padding(0);
             this.rzuc.Name = "rzuc";
             this.rzuc.Size = new System.Drawing.Size(192, 78);
             this.rzuc.TabIndex = 7;
@@ -439,13 +441,6 @@
             this.pictureBox3.UseWaitCursor = true;
             this.pictureBox3.Visible = false;
             // 
-            // jakGraćToolStripMenuItem
-            // 
-            this.jakGraćToolStripMenuItem.Name = "jakGraćToolStripMenuItem";
-            this.jakGraćToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
-            this.jakGraćToolStripMenuItem.Text = "Jak Grać?";
-            this.jakGraćToolStripMenuItem.Click += new System.EventHandler(this.jakGraćToolStripMenuItem_Click);
-            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -484,7 +479,6 @@
         private System.Windows.Forms.MenuStrip menuStrip1;
         private System.Windows.Forms.ToolStripMenuItem graToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem rodzajGryToolStripMenuItem1;
-        private System.Windows.Forms.ToolStripMenuItem ilośćRundToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem wyjdźToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem wynikiToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem wersjaToolStripMenuItem;
