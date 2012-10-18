@@ -4,6 +4,7 @@ using System.ComponentModel;
 using System.Data;
 using System.Drawing;
 using System.Media;
+using System.Diagnostics;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -171,6 +172,11 @@ namespace kosci
             kostka4.Checked = true;
             kostka5.Checked = true;
 
+            if ((button1.Enabled == false) & (button2.Enabled == false) & (button3.Enabled == false) & (button4.Enabled == false) & (button5.Enabled == false) & (button6.Enabled == false))
+            {
+                MessageBox.Show("Koniec Gry, Wynik to: " + sumowanie);
+                rzuc.Enabled = false;
+            }
         }
 
         private void wersjaToolStripMenuItem_Click(object sender, EventArgs e)
@@ -283,5 +289,32 @@ namespace kosci
             zasady += "---------------------------------------------------------------------------\n";
             MessageBox.Show("Zasady gry są bardzo proste:\n"+zasady, "Jak grać?", MessageBoxButtons.OK, MessageBoxIcon.Question);
         }
+
+        private void pictureBox5_Click(object sender, EventArgs e)
+        {
+            Process.Start("https://github.com/mosinski");
+        }
+
+        private void pictureBox6_Click(object sender, EventArgs e)
+        {
+            Process.Start("https://www.facebook.com/m1l05z");
+        }
+
+        private void pictureBox7_Click(object sender, EventArgs e)
+        {
+            Process.Start("mailto:mylosz@yahoo.pl");
+        }
+
+        private void autorzyToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            autor.Visible = true;
+        }
+
+        private void button8_Click(object sender, EventArgs e)
+        {
+            autor.Visible = false;
+        }
+
+
     }
 }

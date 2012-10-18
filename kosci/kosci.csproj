@@ -113,6 +113,10 @@
     <None Include="Resources\roll.wav" />
     <None Include="Resources\gray.png" />
     <None Include="Resources\green.png" />
+    <None Include="Resources\computer_grief.gif" />
+    <None Include="Resources\fb.png" />
+    <None Include="Resources\gh.png" />
+    <None Include="Resources\yahoo.png" />
     <Content Include="unnamed.ico" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

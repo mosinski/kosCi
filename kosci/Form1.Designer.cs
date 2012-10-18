@@ -64,11 +64,31 @@
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.pictureBox3 = new System.Windows.Forms.PictureBox();
+            this.autor = new System.Windows.Forms.GroupBox();
+            this.groupBox3 = new System.Windows.Forms.GroupBox();
+            this.label13 = new System.Windows.Forms.Label();
+            this.label12 = new System.Windows.Forms.Label();
+            this.label11 = new System.Windows.Forms.Label();
+            this.label10 = new System.Windows.Forms.Label();
+            this.pictureBox4 = new System.Windows.Forms.PictureBox();
+            this.label9 = new System.Windows.Forms.Label();
+            this.label8 = new System.Windows.Forms.Label();
+            this.pictureBox5 = new System.Windows.Forms.PictureBox();
+            this.pictureBox6 = new System.Windows.Forms.PictureBox();
+            this.pictureBox7 = new System.Windows.Forms.PictureBox();
+            this.button8 = new System.Windows.Forms.Button();
+            this.toolStripSeparator2 = new System.Windows.Forms.ToolStripSeparator();
             this.menuStrip1.SuspendLayout();
             this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
+            this.autor.SuspendLayout();
+            this.groupBox3.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).BeginInit();
             this.SuspendLayout();
             // 
             // menuStrip1
@@ -100,7 +120,7 @@
             this.wersjaToolStripMenuItem,
             this.wersjaKarcianaToolStripMenuItem});
             this.rodzajGryToolStripMenuItem1.Name = "rodzajGryToolStripMenuItem1";
-            this.rodzajGryToolStripMenuItem1.Size = new System.Drawing.Size(152, 22);
+            this.rodzajGryToolStripMenuItem1.Size = new System.Drawing.Size(145, 22);
             this.rodzajGryToolStripMenuItem1.Text = "Nowa Gra";
             // 
             // wersjaToolStripMenuItem
@@ -120,13 +140,13 @@
             // toolStripSeparator1
             // 
             this.toolStripSeparator1.Name = "toolStripSeparator1";
-            this.toolStripSeparator1.Size = new System.Drawing.Size(149, 6);
+            this.toolStripSeparator1.Size = new System.Drawing.Size(142, 6);
             // 
             // wyjdźToolStripMenuItem
             // 
             this.wyjdźToolStripMenuItem.Name = "wyjdźToolStripMenuItem";
             this.wyjdźToolStripMenuItem.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Alt | System.Windows.Forms.Keys.Q)));
-            this.wyjdźToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.wyjdźToolStripMenuItem.Size = new System.Drawing.Size(145, 22);
             this.wyjdźToolStripMenuItem.Text = "Wyjdź";
             this.wyjdźToolStripMenuItem.Click += new System.EventHandler(this.wyjdźToolStripMenuItem_Click);
             // 
@@ -139,8 +159,9 @@
             // infoToolStripMenuItem
             // 
             this.infoToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.autorzyToolStripMenuItem,
-            this.jakGraćToolStripMenuItem});
+            this.jakGraćToolStripMenuItem,
+            this.toolStripSeparator2,
+            this.autorzyToolStripMenuItem});
             this.infoToolStripMenuItem.Name = "infoToolStripMenuItem";
             this.infoToolStripMenuItem.Size = new System.Drawing.Size(40, 20);
             this.infoToolStripMenuItem.Text = "Info";
@@ -149,7 +170,8 @@
             // 
             this.autorzyToolStripMenuItem.Name = "autorzyToolStripMenuItem";
             this.autorzyToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
-            this.autorzyToolStripMenuItem.Text = "Autorzy";
+            this.autorzyToolStripMenuItem.Text = "Autor";
+            this.autorzyToolStripMenuItem.Click += new System.EventHandler(this.autorzyToolStripMenuItem_Click);
             // 
             // jakGraćToolStripMenuItem
             // 
@@ -441,12 +463,162 @@
             this.pictureBox3.UseWaitCursor = true;
             this.pictureBox3.Visible = false;
             // 
+            // autor
+            // 
+            this.autor.Controls.Add(this.button8);
+            this.autor.Controls.Add(this.groupBox3);
+            this.autor.Controls.Add(this.label13);
+            this.autor.Controls.Add(this.label12);
+            this.autor.Controls.Add(this.label11);
+            this.autor.Controls.Add(this.label10);
+            this.autor.Controls.Add(this.pictureBox4);
+            this.autor.Controls.Add(this.label9);
+            this.autor.Controls.Add(this.label8);
+            this.autor.Location = new System.Drawing.Point(221, 49);
+            this.autor.Name = "autor";
+            this.autor.Size = new System.Drawing.Size(311, 323);
+            this.autor.TabIndex = 14;
+            this.autor.TabStop = false;
+            this.autor.Text = "Autor";
+            this.autor.Visible = false;
+            // 
+            // groupBox3
+            // 
+            this.groupBox3.Controls.Add(this.pictureBox7);
+            this.groupBox3.Controls.Add(this.pictureBox5);
+            this.groupBox3.Controls.Add(this.pictureBox6);
+            this.groupBox3.Location = new System.Drawing.Point(33, 208);
+            this.groupBox3.Name = "groupBox3";
+            this.groupBox3.Size = new System.Drawing.Size(247, 80);
+            this.groupBox3.TabIndex = 7;
+            this.groupBox3.TabStop = false;
+            this.groupBox3.Text = "Kontakt";
+            // 
+            // label13
+            // 
+            this.label13.AutoSize = true;
+            this.label13.Font = new System.Drawing.Font("Lucida Console", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.label13.Location = new System.Drawing.Point(80, 167);
+            this.label13.Name = "label13";
+            this.label13.Size = new System.Drawing.Size(225, 19);
+            this.label13.TabIndex = 6;
+            this.label13.Text = "Visual Studio 2012";
+            // 
+            // label12
+            // 
+            this.label12.AutoSize = true;
+            this.label12.Font = new System.Drawing.Font("Lucida Console", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.label12.Location = new System.Drawing.Point(174, 138);
+            this.label12.Name = "label12";
+            this.label12.Size = new System.Drawing.Size(38, 24);
+            this.label12.TabIndex = 5;
+            this.label12.Text = "C#";
+            // 
+            // label11
+            // 
+            this.label11.AutoSize = true;
+            this.label11.Font = new System.Drawing.Font("Book Antiqua", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.label11.Location = new System.Drawing.Point(6, 166);
+            this.label11.Name = "label11";
+            this.label11.Size = new System.Drawing.Size(75, 20);
+            this.label11.TabIndex = 4;
+            this.label11.Text = "Program:";
+            // 
+            // label10
+            // 
+            this.label10.AutoSize = true;
+            this.label10.Font = new System.Drawing.Font("Book Antiqua", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.label10.Location = new System.Drawing.Point(6, 141);
+            this.label10.Name = "label10";
+            this.label10.Size = new System.Drawing.Size(170, 20);
+            this.label10.TabIndex = 3;
+            this.label10.Text = "Język Programowania:";
+            // 
+            // pictureBox4
+            // 
+            this.pictureBox4.Image = global::kosci.Properties.Resources.computer_grief;
+            this.pictureBox4.Location = new System.Drawing.Point(6, 16);
+            this.pictureBox4.Name = "pictureBox4";
+            this.pictureBox4.Size = new System.Drawing.Size(149, 108);
+            this.pictureBox4.TabIndex = 0;
+            this.pictureBox4.TabStop = false;
+            // 
+            // label9
+            // 
+            this.label9.AutoSize = true;
+            this.label9.Font = new System.Drawing.Font("OCR A Extended", 26.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label9.Location = new System.Drawing.Point(149, 74);
+            this.label9.Name = "label9";
+            this.label9.Size = new System.Drawing.Size(168, 37);
+            this.label9.TabIndex = 2;
+            this.label9.Text = "Osiński";
+            // 
+            // label8
+            // 
+            this.label8.AutoSize = true;
+            this.label8.Font = new System.Drawing.Font("OCR A Extended", 26.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label8.Location = new System.Drawing.Point(149, 25);
+            this.label8.Name = "label8";
+            this.label8.Size = new System.Drawing.Size(149, 37);
+            this.label8.TabIndex = 1;
+            this.label8.Text = "Miłosz";
+            // 
+            // pictureBox5
+            // 
+            this.pictureBox5.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.pictureBox5.Image = global::kosci.Properties.Resources.gh;
+            this.pictureBox5.Location = new System.Drawing.Point(31, 17);
+            this.pictureBox5.Name = "pictureBox5";
+            this.pictureBox5.Size = new System.Drawing.Size(64, 57);
+            this.pictureBox5.TabIndex = 0;
+            this.pictureBox5.TabStop = false;
+            this.pictureBox5.Click += new System.EventHandler(this.pictureBox5_Click);
+            // 
+            // pictureBox6
+            // 
+            this.pictureBox6.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.pictureBox6.Image = global::kosci.Properties.Resources.fb;
+            this.pictureBox6.Location = new System.Drawing.Point(101, 17);
+            this.pictureBox6.Name = "pictureBox6";
+            this.pictureBox6.Size = new System.Drawing.Size(64, 57);
+            this.pictureBox6.TabIndex = 1;
+            this.pictureBox6.TabStop = false;
+            this.pictureBox6.Click += new System.EventHandler(this.pictureBox6_Click);
+            // 
+            // pictureBox7
+            // 
+            this.pictureBox7.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.pictureBox7.Image = global::kosci.Properties.Resources.yahoo;
+            this.pictureBox7.Location = new System.Drawing.Point(170, 17);
+            this.pictureBox7.Name = "pictureBox7";
+            this.pictureBox7.Size = new System.Drawing.Size(57, 57);
+            this.pictureBox7.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox7.TabIndex = 2;
+            this.pictureBox7.TabStop = false;
+            this.pictureBox7.Click += new System.EventHandler(this.pictureBox7_Click);
+            // 
+            // button8
+            // 
+            this.button8.Location = new System.Drawing.Point(123, 294);
+            this.button8.Name = "button8";
+            this.button8.Size = new System.Drawing.Size(75, 23);
+            this.button8.TabIndex = 8;
+            this.button8.Text = "Zamknij";
+            this.button8.UseVisualStyleBackColor = true;
+            this.button8.Click += new System.EventHandler(this.button8_Click);
+            // 
+            // toolStripSeparator2
+            // 
+            this.toolStripSeparator2.Name = "toolStripSeparator2";
+            this.toolStripSeparator2.Size = new System.Drawing.Size(149, 6);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = global::kosci.Properties.Resources.background_green;
             this.ClientSize = new System.Drawing.Size(742, 410);
+            this.Controls.Add(this.autor);
             this.Controls.Add(this.pictureBox3);
             this.Controls.Add(this.pictureBox2);
             this.Controls.Add(this.pictureBox1);
@@ -469,6 +641,13 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
+            this.autor.ResumeLayout(false);
+            this.autor.PerformLayout();
+            this.groupBox3.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -511,6 +690,20 @@
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.Button button7;
         private System.Windows.Forms.ToolStripMenuItem jakGraćToolStripMenuItem;
+        private System.Windows.Forms.GroupBox autor;
+        private System.Windows.Forms.PictureBox pictureBox4;
+        private System.Windows.Forms.Label label8;
+        private System.Windows.Forms.Label label9;
+        private System.Windows.Forms.Label label10;
+        private System.Windows.Forms.Label label11;
+        private System.Windows.Forms.GroupBox groupBox3;
+        private System.Windows.Forms.Label label13;
+        private System.Windows.Forms.Label label12;
+        private System.Windows.Forms.PictureBox pictureBox5;
+        private System.Windows.Forms.PictureBox pictureBox6;
+        private System.Windows.Forms.PictureBox pictureBox7;
+        private System.Windows.Forms.Button button8;
+        private System.Windows.Forms.ToolStripSeparator toolStripSeparator2;
     }
 }
 
