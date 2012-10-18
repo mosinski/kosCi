@@ -31,16 +31,74 @@ namespace kosci
         //wyswietlanie elementów po wybraniu rodzaju gry
         private void pokaz()
         {
-            kostka1.Visible = true;
-            kostka2.Visible = true;
-            kostka3.Visible = true;
-            kostka4.Visible = true;
-            kostka5.Visible = true;
+            if (kostka1.Visible == false)
+            {
+                kostka1.Visible = true;
+                kostka2.Visible = true;
+                kostka3.Visible = true;
+                kostka4.Visible = true;
+                kostka5.Visible = true;
+            }
+            //wyświtlanie przycisku rzuć
             rzuc.Visible = true;
+            if (rzuc.Enabled == false)
+            {
+                rzuc.Enabled = true;
+            }
             groupBox1.Visible = true;
+            
             pictureBox1.Visible = true;
             pictureBox2.Visible = true;
             pictureBox3.Visible = true;
+            
+            //wyświetlania punktacji
+            if (button1.Enabled == false)
+            { 
+                button1.Enabled = true; 
+            }
+            if (button2.Enabled == false)
+            { 
+                button2.Enabled = true; 
+            }
+            if (button3.Enabled == false)
+            { 
+                button3.Enabled = true; 
+            }
+            if (button4.Enabled == false)
+            { 
+                button4.Enabled = true; 
+            }
+            if (button5.Enabled == false)
+            { 
+                button5.Enabled = true; 
+            }
+            if (button6.Enabled == false)
+            {
+                button6.Enabled = true;
+            }
+
+            if ((button1.Text != "") || (button2.Text != "") || (button3.Text != "") || (button4.Text != "") || (button5.Text != "") || (button6.Text != ""))
+            {
+                button1.Text = "";
+                button2.Text = "";
+                button3.Text = "";
+                button4.Text = "";
+                button5.Text = "";
+                button6.Text = "";
+                button7.Text = "";
+            }
+            //zerowanie zmiennych
+            runda = 0; mnoznik = 0; suma = 0; wynik = 0;
+            kostka1_los = 0; kostka2_los = 0; kostka3_los = 0; kostka4_los = 0; kostka5_los = 0;
+            //zmiana kostek na 0
+            if (kostka1.Image != Properties.Resources._0)
+            {
+                kostka1.Image = Properties.Resources._0;
+                kostka2.Image = Properties.Resources._0;
+                kostka3.Image = Properties.Resources._0;
+                kostka4.Image = Properties.Resources._0;
+                kostka5.Image = Properties.Resources._0;
+            }
         }
 
 
@@ -308,11 +366,25 @@ namespace kosci
         private void autorzyToolStripMenuItem_Click(object sender, EventArgs e)
         {
             autor.Visible = true;
+            groupBox1.Visible = false;
+            kostka1.Visible = false;
+            kostka2.Visible = false;
+            kostka3.Visible = false;
+            kostka4.Visible = false;
+            kostka5.Visible = false;
+            rzuc.Visible = false;
         }
 
         private void button8_Click(object sender, EventArgs e)
         {
             autor.Visible = false;
+            groupBox1.Visible = true;
+            kostka1.Visible = true;
+            kostka2.Visible = true;
+            kostka3.Visible = true;
+            kostka4.Visible = true;
+            kostka5.Visible = true;
+            rzuc.Visible = true;
         }
 
 
