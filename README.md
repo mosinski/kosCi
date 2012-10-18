@@ -30,6 +30,8 @@ Jeśli w górnych kategoriach tabeli (od jedynek do szóstek) uzyska się razem 
 
 </ul>
 
+>zapisać wynik oraz obejrzeć wszystkie zapisane wyniki<br>
+
 Zapisy , Przydzielone Zadania, Problemy znajdziecie u góry w zakładce <strong>Issues</strong>
 
 Projekt pisany jest w Microsoft Visual Studio 2012 oczywiście ten edytor nie jest przymusowy.
