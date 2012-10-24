@@ -48,6 +48,8 @@
             this.kostka5 = new System.Windows.Forms.CheckBox();
             this.rzuc = new System.Windows.Forms.Button();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.label14 = new System.Windows.Forms.Label();
+            this.button9 = new System.Windows.Forms.Button();
             this.label7 = new System.Windows.Forms.Label();
             this.button7 = new System.Windows.Forms.Button();
             this.label6 = new System.Windows.Forms.Label();
@@ -169,19 +171,19 @@
             // jakGraćToolStripMenuItem
             // 
             this.jakGraćToolStripMenuItem.Name = "jakGraćToolStripMenuItem";
-            this.jakGraćToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.jakGraćToolStripMenuItem.Size = new System.Drawing.Size(122, 22);
             this.jakGraćToolStripMenuItem.Text = "Jak Grać?";
             this.jakGraćToolStripMenuItem.Click += new System.EventHandler(this.jakGraćToolStripMenuItem_Click);
             // 
             // toolStripSeparator2
             // 
             this.toolStripSeparator2.Name = "toolStripSeparator2";
-            this.toolStripSeparator2.Size = new System.Drawing.Size(149, 6);
+            this.toolStripSeparator2.Size = new System.Drawing.Size(119, 6);
             // 
             // autorzyToolStripMenuItem
             // 
             this.autorzyToolStripMenuItem.Name = "autorzyToolStripMenuItem";
-            this.autorzyToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.autorzyToolStripMenuItem.Size = new System.Drawing.Size(122, 22);
             this.autorzyToolStripMenuItem.Text = "Autor";
             this.autorzyToolStripMenuItem.Click += new System.EventHandler(this.autorzyToolStripMenuItem_Click);
             // 
@@ -274,6 +276,8 @@
             // groupBox1
             // 
             this.groupBox1.BackColor = System.Drawing.Color.Transparent;
+            this.groupBox1.Controls.Add(this.label14);
+            this.groupBox1.Controls.Add(this.button9);
             this.groupBox1.Controls.Add(this.label7);
             this.groupBox1.Controls.Add(this.button7);
             this.groupBox1.Controls.Add(this.label6);
@@ -296,6 +300,25 @@
             this.groupBox1.Text = "Puktacja";
             this.groupBox1.Visible = false;
             this.groupBox1.Enter += new System.EventHandler(this.groupBox1_Enter);
+            // 
+            // label14
+            // 
+            this.label14.AutoSize = true;
+            this.label14.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.label14.Location = new System.Drawing.Point(292, 18);
+            this.label14.Name = "label14";
+            this.label14.Size = new System.Drawing.Size(46, 18);
+            this.label14.TabIndex = 15;
+            this.label14.Text = "trójki";
+            // 
+            // button9
+            // 
+            this.button9.Location = new System.Drawing.Point(295, 37);
+            this.button9.Name = "button9";
+            this.button9.Size = new System.Drawing.Size(43, 33);
+            this.button9.TabIndex = 14;
+            this.button9.UseVisualStyleBackColor = true;
+            this.button9.Click += new System.EventHandler(this.button9_Click);
             // 
             // label7
             // 
@@ -479,7 +502,7 @@
             this.autor.Controls.Add(this.pictureBox4);
             this.autor.Controls.Add(this.label9);
             this.autor.Controls.Add(this.label8);
-            this.autor.Location = new System.Drawing.Point(221, 65);
+            this.autor.Location = new System.Drawing.Point(222, 65);
             this.autor.Name = "autor";
             this.autor.Size = new System.Drawing.Size(311, 323);
             this.autor.TabIndex = 14;
@@ -705,6 +728,8 @@
         private System.Windows.Forms.PictureBox pictureBox7;
         private System.Windows.Forms.Button button8;
         private System.Windows.Forms.ToolStripSeparator toolStripSeparator2;
+        private System.Windows.Forms.Label label14;
+        private System.Windows.Forms.Button button9;
     }
 }
 

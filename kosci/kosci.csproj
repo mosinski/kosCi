@@ -117,6 +117,7 @@
     <None Include="Resources\fb.png" />
     <None Include="Resources\gh.png" />
     <None Include="Resources\yahoo.png" />
+    <None Include="Resources\wyniki.txt" />
     <Content Include="unnamed.ico" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

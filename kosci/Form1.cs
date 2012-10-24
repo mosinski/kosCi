@@ -17,6 +17,7 @@ namespace kosci
         static int rodzaj_gry = 0, runda = 0, mnoznik = 0, suma = 0, wynik = 0;
         static int kostka1_los = 0, kostka2_los = 0, kostka3_los = 0, kostka4_los = 0, kostka5_los = 0;
         static string nazwa = "_";
+
         public Form1()
         {
             InitializeComponent();
@@ -187,32 +188,35 @@ namespace kosci
 
         private void sumuj()
         {
-            int jedynki = 0, dwojki = 0, trojki = 0, czworki = 0, piatki = 0, szostki = 0;
+            int sumowanie = 0;
             if (button1.Text != "")
             {
-                jedynki = Convert.ToInt32(button1.Text);
+                sumowanie+= Convert.ToInt32(button1.Text);
             }
             if (button2.Text != "")
             {
-                dwojki = Convert.ToInt32(button2.Text);
+                sumowanie+= Convert.ToInt32(button2.Text);
             }
             if (button3.Text != "")
             {
-                trojki = Convert.ToInt32(button3.Text);
+                sumowanie+= Convert.ToInt32(button3.Text);
             }
             if (button4.Text != "")
             {
-                czworki = Convert.ToInt32(button4.Text);
+                sumowanie+= Convert.ToInt32(button4.Text);
             }
             if (button5.Text != "")
             {
-                piatki = Convert.ToInt32(button5.Text);
+                sumowanie+= Convert.ToInt32(button5.Text);
             }
             if (button6.Text != "")
             {
-                szostki = Convert.ToInt32(button6.Text);
+                sumowanie+= Convert.ToInt32(button6.Text);
             }
-            int sumowanie = jedynki + dwojki + trojki + czworki + piatki + szostki;
+            if (button9.Text != "")
+            {
+                sumowanie+= Convert.ToInt32(button9.Text);
+            }
             button7.Text = sumowanie.ToString();
 
             //przywrócenie możliwości 3 rzutów
@@ -350,12 +354,12 @@ namespace kosci
 
         private void pictureBox5_Click(object sender, EventArgs e)
         {
-            Process.Start("https://github.com/mosinski");
+            Process.Start("http://github.com/mosinski");
         }
 
         private void pictureBox6_Click(object sender, EventArgs e)
         {
-            Process.Start("https://www.facebook.com/m1l05z");
+            Process.Start("http://www.facebook.com/m1l05z");
         }
 
         private void pictureBox7_Click(object sender, EventArgs e)
@@ -378,15 +382,54 @@ namespace kosci
         private void button8_Click(object sender, EventArgs e)
         {
             autor.Visible = false;
-            groupBox1.Visible = true;
-            kostka1.Visible = true;
-            kostka2.Visible = true;
-            kostka3.Visible = true;
-            kostka4.Visible = true;
-            kostka5.Visible = true;
-            rzuc.Visible = true;
+            if (rodzaj_gry != 0)
+            {
+                groupBox1.Visible = true;
+                kostka1.Visible = true;
+                kostka2.Visible = true;
+                kostka3.Visible = true;
+                kostka4.Visible = true;
+                kostka5.Visible = true;
+                rzuc.Visible = true;
+            }
         }
 
-
+        private void button9_Click(object sender, EventArgs e)
+        {
+            int[] pojemnik = new int[] { 0, 1, 2, 3, 4, 5, 6 };
+            int[] pomocnicza = new int[] { 0, 0, 0, 0, 0, 0, 0 };
+            foreach (int cyfra in pojemnik)
+            {
+                if (cyfra == kostka1_los)
+                { ++pomocnicza[cyfra];
+                if (pomocnicza[cyfra] == 3)
+                { button9.Text = (kostka1_los*3).ToString(); }
+                }
+                if (cyfra == kostka2_los)
+                { ++pomocnicza[cyfra]; 
+                if (pomocnicza[cyfra] == 3)
+                { button9.Text = (kostka2_los*3).ToString(); }
+                }
+                if (cyfra == kostka3_los)
+                { ++pomocnicza[cyfra]; 
+                if (pomocnicza[cyfra] == 3)
+                { button9.Text = (kostka3_los*3).ToString(); }
+                }
+                if (cyfra == kostka4_los)
+                { ++pomocnicza[cyfra]; 
+                if (pomocnicza[cyfra] == 3)
+                { button9.Text = (kostka4_los*3).ToString(); }
+                }
+                if (cyfra == kostka5_los)
+                { ++pomocnicza[cyfra];
+                if (pomocnicza[cyfra] == 3)
+                { button9.Text = (kostka5_los * 3).ToString(); }
+                }
+                if (button9.Text == "")
+                { button9.Text = "0"; }
+                 button9.Enabled = false;
+                 sumuj();
+            }
+        }
     }
 }
