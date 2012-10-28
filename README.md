@@ -8,7 +8,7 @@ Założenia są proste storzyć gierke w której gracz będzie mógł:
 >wybrać pomiędzy 2-oma rodzajami rozgrywki:<br>
 
 <ul>
-<li><b>jedynki, dwójki, trójki, czwórki, piątki, szóstki.</b></li>
+<li><b>Wersja Klasyczna - jedynki, dwójki, trójki, czwórki, piątki, szóstki.</b></li>
 
 Wybierając jedną z nich, w pozycji odpowiadającej kategorii wpisuje się sumę oczek z kostek wskazujących wybraną liczbę.<br>
 
@@ -17,7 +17,7 @@ a jeśli wybierze "trójki", to 3 pkt. (bo wyrzucił tylko jedną trójkę).<br>
 Z kolei wskazując kategorię "dwójki", "piątki" lub "szóstki" otrzyma 0 pkt. (bo w układzie nie ma kostek z taką liczbą oczek).<br>
 
 Jeśli w górnych kategoriach tabeli (od jedynek do szóstek) uzyska się razem 63 pkt. lub więcej, to dodatkowo otrzymuje się premię w wysokości 35 pkt.
-<li><b>Wersja Karciana</b></li>
+<li><b>Wersja Rozszerzona - potrójna, kareta, full, mały strit, duży strit.</b></li>
 
     trzy jednakowe -- jeśli w układzie występują trzy jednakowe liczby oczek, uzyskuje się sumę oczek z wszystkich pięciu kostek; np. dla układu 6,5,2,5,5, byłoby to 23 pkt.<br>
     cztery jednakowe -- j.w., ale co najmniej cztery jednakowe liczby oczek;<br>
