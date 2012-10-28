@@ -47,6 +47,33 @@ namespace kosci
                 rzuc.Enabled = true;
             }
             groupBox1.Visible = true;
+
+            if (rodzaj_gry == 1)
+            {
+                label18.Visible = false;
+                button13.Visible = false;
+                label15.Visible = false;
+                button10.Visible = false;
+                label14.Visible = false;
+                button9.Visible = false;
+                label17.Visible = false;
+                button12.Visible = false;
+                label16.Visible = false;
+                button11.Visible = false;
+            }
+            if (rodzaj_gry == 2)
+            {
+                label18.Visible = true;
+                button13.Visible = true;
+                label15.Visible = true;
+                button10.Visible = true;
+                label14.Visible = true;
+                button9.Visible = true;
+                label17.Visible = true;
+                button12.Visible = true;
+                label16.Visible = true;
+                button11.Visible = true;
+            }
             
             pictureBox1.Visible = true;
             pictureBox2.Visible = true;
@@ -77,8 +104,28 @@ namespace kosci
             {
                 button6.Enabled = true;
             }
+            if (button13.Enabled == false)
+            {
+                button13.Enabled = true;
+            }
+            if (button10.Enabled == false)
+            {
+                button10.Enabled = true;
+            }
+            if (button9.Enabled == false)
+            {
+                button9.Enabled = true;
+            }
+            if (button12.Enabled == false)
+            {
+                button12.Enabled = true;
+            }
+            if (button11.Enabled == false)
+            {
+                button11.Enabled = true;
+            }
 
-            if ((button1.Text != "") || (button2.Text != "") || (button3.Text != "") || (button4.Text != "") || (button5.Text != "") || (button6.Text != ""))
+            if ((button1.Text != "") || (button2.Text != "") || (button3.Text != "") || (button4.Text != "") || (button5.Text != "") || (button6.Text != "") || (button13.Text != "") || (button10.Text != "") || (button9.Text != "") || (button12.Text != "") || (button11.Text != ""))
             {
                 button1.Text = "";
                 button2.Text = "";
@@ -87,6 +134,11 @@ namespace kosci
                 button5.Text = "";
                 button6.Text = "";
                 button7.Text = "";
+                button13.Text = "";
+                button10.Text = "";
+                button9.Text = "";
+                button12.Text = "";
+                button11.Text = "";
             }
             //zerowanie zmiennych
             runda = 0; mnoznik = 0; suma = 0; wynik = 0;
@@ -431,5 +483,16 @@ namespace kosci
                  sumuj();
             }
         }
+
+        private void label15_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void button10_Click(object sender, EventArgs e)
+        {
+
+        }
+
     }
 }
